@@ -112,9 +112,7 @@ function trendingLabel(link: QuickLink): string {
         {
           hero.ctaPrimary && (
             <a
-              href={site.social.official}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={listPath(NAVIGATION_CONFIG[4]?.key ?? 'codes', locale)}
               class="btn-primary"
             >
               <Icon name="lucide:play" class="mr-2 h-4 w-4" />
@@ -244,18 +242,14 @@ function trendingLabel(link: QuickLink): string {
           <p class="mx-auto mt-2 max-w-xl text-muted-foreground">{closingCta.description}</p>
           <div class="mt-6 flex justify-center gap-3">
             <a
-              href={site.social.official}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={listPath(NAVIGATION_CONFIG[4]?.key ?? 'codes', locale)}
               class="btn-primary"
             >
               {closingCta.primary}
             </a>
-            {closingCta.secondary && site.social.discord && (
+            {closingCta.secondary && (
               <a
-                href={site.social.discord}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={listPath(NAVIGATION_CONFIG[1]?.key ?? 'guides', locale)}
                 class="btn-outline"
               >
                 {closingCta.secondary}

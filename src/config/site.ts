@@ -64,23 +64,16 @@ export interface SiteConfig {
 export const site: SiteConfig = {
   name: 'Aniimo Wiki',
   shortName: 'Aniimo',
-  description:
-    'Complete Aniimo Wiki: active codes, character tier list, boss mechanics, guides, item locations, and latest game updates. Last-verified daily.',
+  description: 'Complete Aniimo Wiki: active codes, character tier list, boss mechanics, guides, item locations, and latest game updates. Last-verified daily.',
   domain: 'aniimo.vercel.app',
   tagline: 'Your ultimate database & strategy guide for Aniimo',
-  legalNotice:
-    'Aniimo Wiki is an unofficial fan-made community website. Not affiliated with or endorsed by Roblox or the Aniimo development team.',
+  legalNotice: 'Aniimo Wiki is an unofficial fan-made community website. Not affiliated with or endorsed by Roblox or the Aniimo development team.',
+  // Set a real address if you run no social channels — the contact page
+  // renders it as a mailto link.
   contactEmail: '',
   social: {
-    official: 'https://www.roblox.com',
-    discord: 'https://discord.gg',
-    youtube: 'https://youtube.com',
-    twitter: 'https://twitter.com',
-    reddit: 'https://reddit.com',
+    official: '',
   },
-  sameAs: [
-    'https://www.roblox.com',
-  ],
   game: {
     name: 'Aniimo',
     platform: 'Roblox',
@@ -88,6 +81,8 @@ export const site: SiteConfig = {
     genre: 'Anime Action RPG',
     releaseDate: '2026-01-01',
   },
+  // og:image dims of the SHIPPED hero.webp — if you replace public/images/hero.webp,
+  // update these in src/config/site.ts to match (wrong dims mis-crop share cards).
   ogImageWidth: 1200,
   ogImageHeight: 630,
 };

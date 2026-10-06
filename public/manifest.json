@@ -1,11 +1,11 @@
 {
-  "name": "Anvil Quest Wiki",
-  "short_name": "AQ Wiki",
-  "description": "Complete Anvil Quest wiki with boss guides, codes, and tier lists.",
+  "name": "Aniimo Wiki",
+  "short_name": "Aniimo",
+  "description": "Complete Aniimo Wiki: active codes, character tier list, boss mechanics, guides, item locations, and latest game updates. Last-verified daily.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#f36716",
+  "theme_color": "#895af6",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
