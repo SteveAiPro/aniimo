@@ -235,7 +235,9 @@ const privacyLabel = consent?.privacyLabel ?? footerStrings.privacyPolicy ?? 'Pr
     {/* Theme color (browser chrome) is injected by the runtime script below —
         meta content is a plain string where var() never resolves. */}
 
-    {/* Google Search Console verification (optional) */}
+    {/* Search Console & Bing Verification */}
+    <meta name="google-site-verification" content="f3tN3B6c0_s0gRkI0e48-G0Y2iI6gqC7721Y-gXQv9I" />
+    <meta name="msvalidate.01" content="AC5D7BCAEC468F002447BA8B365DEB36" />
     {gscVerification && <meta name="google-site-verification" content={gscVerification} />}
 
     {/*
