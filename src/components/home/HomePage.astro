@@ -22,6 +22,7 @@ import LocaleLayout from '~/components/layout/LocaleLayout.astro';
 import VideoSection from '~/components/home/VideoSection.astro';
 import QuickStart from '~/components/home/QuickStart.astro';
 import ExploreModules from '~/components/home/ExploreModules.astro';
+import AdsterraSlot from '~/components/ads/AdsterraSlot.astro';
 import { site } from '~/config/site';
 import { NAVIGATION_CONFIG } from '~/config/navigation';
 import { type Locale } from '~/i18n/routing';
@@ -137,6 +138,9 @@ function trendingLabel(link: QuickLink): string {
     <VideoSection videoId={hero.videoId} title={`${site.game.name} ${shared.gameTrailer}`} />
   )}
 
+  {/* Adsterra 728x90 Top Banner */}
+  <AdsterraSlot name="incontent-728x90" width={728} height={90} hideOnMobile />
+
   {/* ───────────────────────────── Quick Start ────────────────────────── */}
   <QuickStart
     locale={locale}
@@ -227,6 +231,9 @@ function trendingLabel(link: QuickLink): string {
       </section>
     )
   }
+
+  {/* Adsterra Native Banner */}
+  <AdsterraSlot name="native-banner" width={700} height={240} />
 
   {/* ─────────────────────────────── Final CTA ────────────────────────── */}
   {

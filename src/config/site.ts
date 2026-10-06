@@ -62,37 +62,32 @@ export interface SiteConfig {
 }
 
 export const site: SiteConfig = {
-  name: 'Anvil Quest Wiki',
-  shortName: 'AQ Wiki',
+  name: 'Aniimo Wiki',
+  shortName: 'Aniimo',
   description:
-    'Complete Anvil Quest wiki with boss guides, tier lists, codes, item locations, and beginner tips. Every guide carries a last-verified date.',
-  domain: 'anvil.wiki',
-  tagline: 'Your forge for everything Anvil Quest',
+    'Complete Aniimo Wiki: active codes, character tier list, boss mechanics, guides, item locations, and latest game updates. Last-verified daily.',
+  domain: 'aniimo.vercel.app',
+  tagline: 'Your ultimate database & strategy guide for Aniimo',
   legalNotice:
-    'Anvil Quest Wiki is a fan-made community site. Not affiliated with or endorsed by the game developer.',
-  // 👉 APPLY TEMPLATE: set a real address if you run no social channels —
-  // the contact page renders it as a mailto link.
+    'Aniimo Wiki is an unofficial fan-made community website. Not affiliated with or endorsed by Roblox or the Aniimo development team.',
   contactEmail: '',
   social: {
-    official: 'https://example.com/anvil-quest',
-    discord: 'https://discord.gg/example',
-    youtube: 'https://youtube.com/@example',
-    twitter: 'https://twitter.com/example',
-    reddit: 'https://reddit.com/r/anvilquest',
+    official: 'https://www.roblox.com',
+    discord: 'https://discord.gg',
+    youtube: 'https://youtube.com',
+    twitter: 'https://twitter.com',
+    reddit: 'https://reddit.com',
   },
-  // 👉 APPLY TEMPLATE: point these at the game's real canonical pages.
   sameAs: [
-    'https://example.com/anvil-quest',
-    'https://en.wikipedia.org/wiki/Anvil_Quest',
+    'https://www.roblox.com',
   ],
   game: {
-    name: 'Anvil Quest',
+    name: 'Aniimo',
     platform: 'Roblox',
-    developer: 'Forge Studios',
-    genre: 'Fantasy RPG',
-    releaseDate: '2026-01-15',
+    developer: 'Aniimo Studio',
+    genre: 'Anime Action RPG',
+    releaseDate: '2026-01-01',
   },
-  // hero.webp is 1200×630 (the recommended OG share aspect ratio).
   ogImageWidth: 1200,
   ogImageHeight: 630,
 };
